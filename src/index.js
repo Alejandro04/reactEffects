@@ -7,7 +7,12 @@ import thunk from 'redux-thunk'
 import { createStore, applyMiddleware } from 'redux'
 import * as serviceWorker from './serviceWorker';
 
-function reducer(state = {}, action) {
+const initialState = {
+    data: [1,2,3],
+    selected: 1
+}
+
+function reducer(state = initialState, action) {
     return state
 }
 
