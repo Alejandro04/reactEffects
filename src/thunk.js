@@ -1,6 +1,6 @@
 export default payload => {
-    (dispatch, getState) => {
+    return function(dispatch, getState) {
         const state = getState()
         console.log(state)
-    }
+    };
 }
